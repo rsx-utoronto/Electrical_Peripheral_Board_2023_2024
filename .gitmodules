@@ -1,0 +1,3 @@
+[submodule "RPi-Pico-Altium"]
+	path = RPi-Pico-Altium
+	url = https://github.com/amgsus/RPi-Pico-Altium
