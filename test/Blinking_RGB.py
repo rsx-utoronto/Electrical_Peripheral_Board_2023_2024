@@ -1,7 +1,29 @@
 from machine import Pin, PWM, UART
-import machine, neopixel
+import neopixel
 import time
 from time import sleep
+
+strip = neopixel.NeoPixel(Pin(22), 50)
+fan = neopixel.NeoPixel(Pin(28), 6)
+
+# RED = (255, 0, 0)
+# YELLOW_STRIP = (255, 150, 0)
+# GREEN_STRIP = (0, 0, 255)
+# CYAN_STRIP = (0, 255, 255)
+# BLUE_STRIP = (0, 255, 0)
+# PURPLE = (180, 255, 0)
+# 
+# YELLOW = (255, 150, 0)
+# GREEN = (0, 255, 0)
+# CYAN = (0, 255, 255)
+# BLUE = (0, 0, 255)
+# PURPLE = (180, 0, 255)
+BLACK = (0, 0, 0)
+
+fan.fill(BLACK)
+strip.fill(BLACK)
+strip.write()
+fan.write()
 
 pwmR = PWM(Pin(9))
 pwmG = PWM(Pin(10))
@@ -10,18 +32,30 @@ pwmR.freq(100)
 pwmB.freq(100)
 pwmG.freq(100)
 
-strip = neopixel.NeoPixel(machine.Pin(22), 6)
-
 p4 = Pin(4, Pin.IN)
 
 high = 65535
 low = 0
 
+class Green:
+    fan = (0, 255, 0)
+    strip = (0, 0, 255)
+    colour = pwmG
+    
+class Red:
+    fan = (255, 0, 0)
+    strip = (255, 0, 0)
+    colour = pwmR
+
+fan.fill(BLACK)
+strip.fill(BLACK)
+strip.write()
+fan.write()
 pwmR.duty_u16(low)
 pwmG.duty_u16(low)
 pwmB.duty_u16(low)
 
-def blink(colour, time):
+def diming(colour, time):
     for duty in range(low, high, 1):	# slowly increase colour brightness
         colour.duty_u16(duty)
     sleep(time)
@@ -29,67 +63,36 @@ def blink(colour, time):
         colour.duty_u16(duty)
     sleep(time)
     
-def demo(np):
-    n = np.n
-    
-    for i in range(n):
-        np[i] = (255, 0, 0)
-        np.write()
-            
-
-    # cycle
-#     for i in range(4 * n):
-#         for j in range(n):
-#             np[j] = (0, 0, 0)
-#         np[i % n] = (255, 255, 255)
-#         np.write()
-#         time.sleep_ms(25)
-
-    # bounce
-#     for i in range(4 * n):
-#         for j in range(n):
-#             np[j] = (0, 0, 128)
-#         if (i // n) % 2 == 0:
-#             np[i % n] = (0, 0, 0)
-#         else:
-#             np[n - 1 - (i % n)] = (0, 0, 0)
-#         np.write()
-#         time.sleep_ms(60)
-
-    # fade in/out
-#     for i in range(0, 4 * 256, 8):
-#         for j in range(n):
-#             if (i // 256) % 2 == 0:
-#                 val = i & 0xff
-#             else:
-#                 val = 255 - (i & 0xff)
-#             np[j] = (val, 0, 0)
-#         np.write()
-
-    # clear
-#     for i in range(n):
-#         np[i] = (0, 0, 0)
-#     np.write()
-
-
-while True:
-    #white
-#     for duty in range(65025):
-#         pwmR.duty_u16(duty)
-#         pwmB.duty_u16(duty)
-#         pwmG.duty_u16(duty)
-#         sleep(0.0001)
-#     blink(pwmR, 1)
-#     blink(pwmG, 1)
-#     blink(pwmB, 1)
-#         
-#     if (p4.value()):
-#         pwmR.duty_u16(high)
-#         pwmG.duty_u16(low)
-#         pwmB.duty_u16(low)
-#     else:
-#         pwmR.duty_u16(low)
-#         pwmG.duty_u16(low)
-#         pwmB.duty_u16(low)
-    strip[0] = (255, 0, 0)
+def blink(colour, wait):
+    colour.colour.duty_u16(low)
+    fan.fill(BLACK)
+    strip.fill(BLACK)
     strip.write()
+    fan.write()
+    
+    colour.colour.duty_u16(high)
+    fan.fill(colour.fan)
+    strip.fill(colour.strip)
+    fan.write()
+    strip.write()
+    sleep(wait)
+    
+    colour.colour.duty_u16(low)
+    fan.fill(BLACK)
+    strip.fill(BLACK)
+    strip.write()
+    fan.write()
+    sleep(wait)
+
+    
+while True:
+#     for i in range(5):
+#         blink(pwmG, 1)
+#     diming(pwmR, 1)
+#     diming(pwmB, 1)
+
+    blink(Red, 1)
+    blink(Green, 1)
+
+
+        
