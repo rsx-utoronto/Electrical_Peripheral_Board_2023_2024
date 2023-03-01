@@ -20,11 +20,13 @@ fan = neopixel.NeoPixel(Pin(28), 6)
 # PURPLE = (180, 0, 255)
 BLACK = (0, 0, 0)
 
+# Clear the devices
 fan.fill(BLACK)
 strip.fill(BLACK)
 strip.write()
 fan.write()
 
+# Configure the RGB pins for Ultra Bright LEDs
 pwmR = PWM(Pin(9))
 pwmG = PWM(Pin(10))
 pwmB = PWM(Pin(11))
@@ -37,6 +39,7 @@ p4 = Pin(4, Pin.IN)
 high = 65535
 low = 0
 
+# Define colours
 class Green:
     fan = (0, 255, 0)
     strip = (0, 0, 255)
@@ -46,7 +49,18 @@ class Red:
     fan = (255, 0, 0)
     strip = (255, 0, 0)
     colour = pwmR
-
+    
+class Blue:
+    fan = (0, 0, 255)
+    strip = (0, 255, 0)
+    colour = pwmB
+    
+class Yellow:
+    fan = (180, 255, 0)
+    strip = (180, 0, 255)
+    colour = pwmB
+    
+# Clear output light devices
 fan.fill(BLACK)
 strip.fill(BLACK)
 strip.write()
@@ -56,10 +70,10 @@ pwmG.duty_u16(low)
 pwmB.duty_u16(low)
 
 def diming(colour, time):
-    for duty in range(low, high, 1):	# slowly increase colour brightness
+    for duty in range(low, high, 1):    # slowly increase colour brightness
         colour.duty_u16(duty)
     sleep(time)
-    for duty in range(high, low, -1):		# slowly decrease colour brightness
+    for duty in range(high, low, -1):       # slowly decrease colour brightness
         colour.duty_u16(duty)
     sleep(time)
     
@@ -90,9 +104,9 @@ while True:
 #         blink(pwmG, 1)
 #     diming(pwmR, 1)
 #     diming(pwmB, 1)
+#     diming(pwmG, 1)
 
     blink(Red, 1)
     blink(Green, 1)
-
-
-        
+    blink(Blue, 1)
+    blink(Yellow, 1)
