@@ -1,7 +1,7 @@
 import rospy 
 import serial 
 
-# Port may be different (0 or 1)
+# Port may be different (0 or 1) -> find_usb.sh script is very useful
 ser = serial.Serial('/dev/ttyACM1')
 ser.baudrate = 115200
 
