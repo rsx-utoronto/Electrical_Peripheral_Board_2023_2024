@@ -1,12 +1,16 @@
 char Mymessage[1]; //Initialized variable to store recieved data
   
   void setup() {
-    // Begin the Serial at 9600 Baud
-    Serial.begin(9600);
+    // Begin the Serial at 115200 Baud
+    Serial.begin(115200);
   }
   
   void loop() {
-    Serial.readBytes(Mymessage,1); //Read the serial data and store in var
-    Serial.println(Mymessage); //Print data on Serial Monitor
-    delay(1000);
+    byte n = Serial.available();
+    if(n != 0)  {
+      byte m = Serial.readBytes(Mymessage, 1);
+      Mymessage[m] = '\0'; //inserting null-charcater
+      Serial.println(Mymessage);
+      Serial.print("");
+    }
   }
