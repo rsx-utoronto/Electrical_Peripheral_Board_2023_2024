@@ -9,6 +9,8 @@
 #define red 2
 #define blue 3
 
+
+
 int buttonvalue;
 int x;
 void setup (void)
@@ -19,6 +21,15 @@ void setup (void)
   SPI.begin();                            //Begins the SPI commnuication
   SPI.setClockDivider(SPI_CLOCK_DIV16);    //Sets clock for SPI communication at 16 (16/16=1Mhz)
   digitalWrite(SS,HIGH);                  // Setting SlaveSelect as HIGH (So master doesnt connnect with slave)
+
+  int BLUE = 6;
+  int RED = 4;
+  int GREEN = 2;
+  
+  pinMode(BLUE, OUTPUT);
+  pinMode(GREEN, OUTPUT);
+  pinMode(RED, OUTPUT);
+
 }
 void loop(void){
 //initial buffer thing that davis told us to do -- look at CAN doc
@@ -29,6 +40,10 @@ void loop(void){
     //command by placing the Address Pointer at one of four locations, as
     //indicated by ‘nm’.
   digitalWrite(SS, HIGH);
+
+  int BLUE = 6;
+  int RED = 4;
+  int GREEN = 2;
   
  byte Mastersend,Mastereceive,Holder1, Holder2; 
  Holder1 = 0;
@@ -38,7 +53,7 @@ void loop(void){
     digitalWrite(SS, LOW);                  //Starts communication with Slave connected to master
     Mastersend = 1;      
     Holder1=SPI.transfer(Mastersend); //Send the mastersend value to slave also receives value from slave
-    MasterRecieve=SPI.transfer(Holder2);
+    Mastereceive=SPI.transfer(Holder2);
     digitalWrite(SS, HIGH); 
   
   if(Mastereceive == green){                 //Logic for setting the LED output depending upon value received from slave
@@ -51,24 +66,27 @@ void loop(void){
       } else {
         digitalWrite(GREEN, LOW);
       }
-
+    Serial.println("green");
     }
 
   else if(Mastereceive == blue){
     digitalWrite(RED, LOW);
     digitalWrite(BLUE, HIGH);
     digitalWrite(GREEN, LOW);
+    Serial.println("blue");
   }
 
   else if(Mastereceive == red){
     digitalWrite(RED, HIGH);
     digitalWrite(BLUE, LOW);
     digitalWrite(GREEN, LOW);
+    Serial.println("red");
   }
 
-  else Serial.write("Coco fucked up /n");
+  else Serial.println("Coco fucked up /n");
   
 
   delay(500);
 
+}
 }
