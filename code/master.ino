@@ -5,10 +5,11 @@
 #include <SPI.h>  //Library for SPI
 #define LED 7
 #define ipbutton 2
-#define green 1
+#define green 0
 #define red 2
 #define blue 3
 
+byte SPI_ReadRXBuffer();
 int buttonvalue;
 int x;
 void setup(void) {
@@ -29,32 +30,24 @@ void setup(void) {
   pinMode(RED, OUTPUT);
 }
 void loop(void) {
-  // initial buffer thing that davis told us to do -- look at CAN doc
-  byte Holder0;
-  digitalWrite(SS, LOW);
-  Holder0 = SPI.transfer(
-      0b10010000);  // nm = 00     so send 1001 0000
-                    // When reading a receive buffer, reduces the overhead of a
-                    // normal READ command by placing the Address Pointer at one
-                    // of four locations, as indicated by ‘nm’.
-  digitalWrite(SS, HIGH);
+  
 
   int BLUE = 6;
   int RED = 4;
   int GREEN = 2;
 
-  byte Mastersend, Mastereceive, Holder1, Holder2;
-  Holder1 = 0;
-  Holder2 = 1;  // dont care
+  //byte Mastersend, Mastereceive, Holder1, Holder2;
+  //Holder1 = 0;
+  //Holder2 = 1;  // dont care
 
   while (true) {
-    digitalWrite(SS,
-                 LOW);  // Starts communication with Slave connected to master
-    Mastersend = 1;
-    Holder1 = SPI.transfer(Mastersend);  // Send the mastersend value to slave
-                                         // also receives value from slave
-    Mastereceive = SPI.transfer(Holder2);
-    digitalWrite(SS, HIGH);
+    byte Mastereceive = SPI_ReadRXBuffer();
+    //digitalWrite(SS, LOW);  // Starts communication with Slave connected to master
+    //Mastersend = 1;
+    // Holder1 = SPI.transfer(Mastersend);  // Send the mastersend value to slave
+    //                                      // also receives value from slave
+    // Mastereceive = SPI.transfer(Holder2);
+    // digitalWrite(SS, HIGH);
 
     if (Mastereceive == green) {  // Logic for setting the LED output depending
                                   // upon value received from slave
@@ -123,25 +116,26 @@ void SPI_LoadTXBuffer(byte instruction, byte address){
   SPI.transfer(&buffer, 2);
 }
 
-byte SPI_Read(byte address, int DataSize){ //datasize in bytes <=4
+byte SPI_Read(byte address, int DataSize){ //datasize in bytes <=2
   digitalWrite(SS, LOW);
   byte instruction = 3; //b00000011
-  int64_t buffer = (instruction<<56)|(address<<48);
-  int64_t recieved = SPI.transfer(&buffer, 8); // only recieve max of 4 bytes of data
-  byte dataRecieved = (recieved<<16);
-  delay(0.008*8);
+  int32_t buffer = (instruction<<24)|(address<<16);
+  int32_t recieved = SPI.transfer16(&buffer); 
+  int16_t dataRecieved = (recieved<<16);
+  delay(0.008*4);
   digitalWrite(SS, HIGH);
   return dataRecieved;
 }
 
-
-void SPI_ReadRXBuffer(byte instruction){
- //instruction = 10010nm0
+byte SPI_ReadRXBuffer(){
+ byte instruction = 10010000; //n = 0, m = 0, Receive Buffer 0, Start at RXB0SIDH, address 0x61
  //read data sheet
  digitalWrite(SS, LOW);
- int buffer = (instruction<<8);
- SPI.transfer(&buffer, 2);
- delay(0.008*(1));
+ int16_t buffer = (instruction<<8);
+ int16_t recieved= SPI.transfer(&buffer);
+ byte dataRecieved = (recieved<<8);
+ //delay(0.008*(2));
  digitalWrite(SS, HIGH);
+ Serial.println(recieved);
+ return dataRecieved;
 }
-//void SPI_RTS(?????
