@@ -16,8 +16,7 @@ void setup(void) {
   pinMode(ipbutton, INPUT);  // Sets pin 2 as input
   pinMode(LED, OUTPUT);      // Sets pin 7 as Output
   SPI.begin();               // Begins the SPI commnuication
-  SPI.setClockDivider(
-      SPI_CLOCK_DIV16);  // Sets clock for SPI communication at 16 (16/16=1Mhz)
+  SPI.setClockDivider(SPI_CLOCK_DIV16);  // Sets clock for SPI communication at 16 (16/16=1Mhz)
   digitalWrite(SS, HIGH);  // Setting SlaveSelect as HIGH (So master doesnt
                            // connnect with slave)
 
@@ -88,6 +87,61 @@ void loop(void) {
     else
       Serial.println("Coco fucked up /n");
 
-    delay(500);
-  }
+    delay(1000);
+  } 
 }
+
+void SPI_Reset(){
+  digitalWrite(SS, LOW);
+  byte reset = 0xC0;
+  SPI.transfer(&reset, 1);
+  delay(0.008);
+  digitalWrite(SS, LOW);
+}
+ 
+void SPI_bitModify(byte address, byte mask, byte data){
+  digitalWrite(SS, LOW);
+  byte instruction = 5; //0000101?
+  long buffer;//32 bit (4bytes)
+  buffer = (instruction << 24)|(address << 16)|(mask << 8)|(data);
+  SPI.transfer(&buffer, 4);
+  delay(0.008*4);
+  digitalWrite(SS, HIGH);
+  }
+
+void SPI_Write(byte address, byte data){
+  digitalWrite(SS, LOW);
+  byte instruction = 2; //b00000010
+  long buffer = (instruction<<24)|(address<<16)|(data<<8);
+  SPI.transfer(&buffer, 3);
+  delay(0.008*3);
+  digitalWrite(SS, HIGH);
+  
+}
+void SPI_LoadTXBuffer(byte instruction, byte address){
+  int buffer = (instruction<<8)|(address); //2 bytes
+  SPI.transfer(&buffer, 2);
+}
+
+byte SPI_Read(byte address, int DataSize){ //datasize in bytes <=4
+  digitalWrite(SS, LOW);
+  byte instruction = 3; //b00000011
+  int64_t buffer = (instruction<<56)|(address<<48);
+  int64_t recieved = SPI.transfer(&buffer, 8); // only recieve max of 4 bytes of data
+  byte dataRecieved = (recieved<<16);
+  delay(0.008*8);
+  digitalWrite(SS, HIGH);
+  return dataRecieved;
+}
+
+
+void SPI_ReadRXBuffer(byte instruction){
+ //instruction = 10010nm0
+ //read data sheet
+ digitalWrite(SS, LOW);
+ int buffer = (instruction<<8);
+ SPI.transfer(&buffer, 2);
+ delay(0.008*(1));
+ digitalWrite(SS, HIGH);
+}
+//void SPI_RTS(?????
