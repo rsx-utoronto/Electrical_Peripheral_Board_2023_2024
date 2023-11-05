@@ -1,7 +1,5 @@
 // Master Arduino Code:
 #include <SPI.h>  //Library for SPI
-#define LED 7
-#define ipbutton 2
 #define green 0
 #define red 2
 #define blue 3
