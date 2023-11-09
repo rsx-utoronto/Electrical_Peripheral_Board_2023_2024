@@ -1,2 +1,4 @@
 Record=TopLevelDocument|FileName=Peripheral_Schematic.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Peripheral_Schematic.SchDoc|FileName=Power_Management.SchDoc|SheetNumber=4
 Record=NoMainPathDocument|SourceDocument=Peripheral_Schematic.SchDoc|FileName=SPI_CAN.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Peripheral_Schematic.SchDoc|FileName=Ultra_Bright_RGBs.SchDoc|SheetNumber=3
