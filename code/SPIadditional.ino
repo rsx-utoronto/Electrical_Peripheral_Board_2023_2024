@@ -2,7 +2,7 @@
 
 void SPI_Reset() {
   digitalWrite(SS, LOW);
-  byte reset = 0;
+  byte reset = 0xC0;
   SPI.transfer(&reset, 1);
   digitalWrite(SS, HIGH);
 }
