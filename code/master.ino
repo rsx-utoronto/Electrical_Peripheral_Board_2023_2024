@@ -7,7 +7,9 @@
 #define blue 2
 #define red 3
 
-
+int BLUE = 6;
+  int RED = 4;
+  int GREEN = 2;
 
 void setup(void) {
   Serial.begin(115200);      // Starts Serial Communication at Baud Rate 115200
@@ -16,29 +18,23 @@ void setup(void) {
   SPI.setClockDivider(SPI_CLOCK_DIV16);  // Sets clock for SPI communication at 16 (16/16=1Mhz)
   digitalWrite(SS, HIGH);  // Setting SlaveSelect as HIGH (So master doesnt
                            // connnect with slave)
-  int BLUE = 6;
-  int RED = 4;
-  int GREEN = 2;
+  
   pinMode(BLUE, OUTPUT);
   pinMode(GREEN, OUTPUT);
   pinMode(RED, OUTPUT);
+  SPI.beginTransaction( SPISettings(1000000, MSBFIRST, SPI_MODE0));
 }
 void loop(void) {
-  int BLUE = 6;
-  int RED = 4;
-  int GREEN = 2;
-  byte Mastereceive;
+
+  byte Mastereceive = 0;
   byte color;
-  
-  
-  while (true) {
-  Mastereceive = SPI_ReadRXBuffer(0,0);
-  Serial.println("Input the LED you want on:");
-  int input = Serial.parseInt();
-  if (input != 0) {
-    Mastereceive = input;
-  }
-  Serial.print(color);
+  bool recieved = false;
+  SPI_Reset();
+  //Mastereceive = SPI_ReadRXBuffer(0,0);
+  if(Mastereceive != 0){recieved = true;}
+  Serial.println(Mastereceive);
+  while (Mastereceive) {
+  //Serial.print(color);
   
 
     if (Mastereceive == green) {  // Logic for setting the LED output depending
@@ -72,6 +68,8 @@ void loop(void) {
     else
       Serial.println("Coco messed up /n");
 
-    delay(1000);
+    
   } 
+  recieved = false;
+  delay(1000);
 }
