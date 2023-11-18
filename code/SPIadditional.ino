@@ -10,11 +10,13 @@ void SPI_Reset() {
 int16_t SPI_Read(byte address, int DataSize) {  // datasize in bytes <=2
   digitalWrite(SS, LOW);
   byte instruction = 3;  // b00000011
-  int16_t buffer = (instruction << 8) | (address);
+  int16_t buffer = (address<<8) | (instruction); //will send instruction then address but MSB first per bit in a byte, but LSB overall
+  //Serial.println(buffer);
   SPI.transfer(&buffer, 2);
   int16_t dataRecieved;
+  byte dataReceive1;
   if (DataSize == 1) {
-    byte dataReceive1 = SPI.transfer(&buffer);
+    dataReceive1 = SPI.transfer(&buffer);
     dataRecieved = dataReceive1;
   } else if (DataSize == 2) {
     dataRecieved = SPI.transfer16(&buffer);
@@ -29,41 +31,49 @@ byte SPI_ReadRXBuffer(int n, int m) {
   byte instruction = 10010000 | (n << 2) | (m << 1);
   // read data sheet
   digitalWrite(SS, LOW);
-  int16_t buffer = (instruction << 8);
-  int16_t recieved = SPI.transfer(&buffer);
-  byte dataRecieved = (recieved << 8);
+  SPI.transfer(&instruction, 1);
+  byte buffer = 0;
+  byte recieved = SPI.transfer(&buffer);
+  //byte dataRecieved = (recieved << 8);
   digitalWrite(SS, HIGH);
-  Serial.println(recieved);
-  return dataRecieved;
+  //Serial.println(recieved);
+  return recieved;
 }
 
 void SPI_Write(byte address, byte data) {  // for 1 byte of data
   digitalWrite(SS, LOW);
   byte instruction = 2;  // b00000010
-  long buffer = (instruction << 24) | (address << 16) | (data << 8);
-  SPI.transfer(&buffer, 3);
+  //long buffer = (instruction << 24) | (address << 16) | (data << 8);
+  SPI.transfer(&instruction, 1);
+  SPI.transfer(&address, 1);
+  SPI.transfer(&data, 1);
   digitalWrite(SS, HIGH);
 }
 
 void SPI_LoadTXBuffer(int a, int b, int c, byte dataIn) {
   digitalWrite(SS, LOW);
-  byte instruction = 01000000 | (a << 2) | (b << 1) | c;
-  int buffer = (instruction << 8) | (dataIn);
-  SPI.transfer(&buffer, 2);
+  byte instruction = 0b01000000 | (a << 2) | (b << 1) | c;
+  //int buffer = (instruction << 8) | (dataIn);
+  SPI.transfer(&instruction, 1);
+  SPI.transfer(&dataIn, 1);
   digitalWrite(SS, HIGH);
 }
 
 void SPI_RTS(int T2, int T1, int T0) {
   digitalWrite(SS, LOW);
-  byte buffer = (10000000 | (T2 << 2) | (T1 << 1) | (T0));
+  byte buffer = (0b10000000 | (T2 << 2) | (T1 << 1) | (T0));
+  SPI.transfer(&buffer,1);
   digitalWrite(SS, HIGH);
 }
 void SPI_bitModify(byte address, byte mask, byte data) {
   digitalWrite(SS, LOW);
-  byte instruction = 5;  // 0000101?
-  long buffer;           // 32 bit (4bytes)
-  buffer = (instruction << 24) | (address << 16) | (mask << 8) | (data);
-  SPI.transfer(&buffer, 4);
+  byte instruction = 5;  // 00000101
+  //long buffer;           // 32 bit (4bytes)
+  //buffer = (instruction << 24) | (address << 16) | (mask << 8) | (data);
+  SPI.transfer(&instruction, 1);
+  SPI.transfer(&address, 1);
+  SPI.transfer(&mask, 1);
+  SPI.transfer(&data, 1);
   digitalWrite(SS, HIGH);
 }
 
