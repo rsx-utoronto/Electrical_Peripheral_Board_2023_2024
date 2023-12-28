@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=+5 Pin=UB-1
+Removed Pin From Net: NetName=+5 Pin=UG-1
+Removed Pin From Net: NetName=+5 Pin=UR-1
+Change Component Footprint: Designator=D11 Old Footprint=AVAG-HLMP-3301-2 New Footprint=AVAG-HLMP-3301-2
+Change Component Footprint: Designator=J3 Old Footprint=FP-0039281043-MFG New Footprint=FP-0039281043-MFG

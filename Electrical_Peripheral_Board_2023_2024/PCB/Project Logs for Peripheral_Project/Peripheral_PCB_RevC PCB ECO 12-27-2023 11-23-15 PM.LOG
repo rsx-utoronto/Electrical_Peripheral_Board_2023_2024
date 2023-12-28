@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=TX2RTS_1 Pin=U1-3
+Change Component Description : Designator=F1 Old Description=Micro Chip Fuse, Size [L×W] (EIA) (mm): 1.6×0.8 (EIA:0603), Rated Current (A): 1, Internal R [at 25℃ max.] (m� New Description=Micro Chip Fuse, Size [L×W] (EIA) (mm): 1.6×0.8 (EIA:0603), Rated Current (A): 1, Internal R [at 25℃ max.] (m�|): 125, Rated Voltage (Open Circuit Voltage) [DC] (V): 32, Interrupting Rating (A): 50, Category Temp. Range (°C): -40 to +125
+Added Pin To Net: NetName=TX2RTS_1 Pin=U1-5
+Added Member To Class: ClassName=Ultra_Bright_RGBs Member=Component D11 R
+Added Member To Class: ClassName=Ultra_Bright_RGBs Member=Component D12 G
+Added Member To Class: ClassName=Ultra_Bright_RGBs Member=Component D13 G
+Added Member To Class: ClassName=Ultra_Bright_RGBs Member=Component J3 1x4_FEMALE_VERT_THT
+Added Member To Class: ClassName=Peripheral_Schematic Member=Component TH5 M3_screw
+Added Member To Class: ClassName=Peripheral_Schematic Member=Component TH6 M3_screw

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=BLUE_CTRL_1 Pin=U1-6
+Removed Pin From Net: NetName=RED_CTRL_1 Pin=U1-9
+Change Component Footprint: Designator=D11 Old Footprint=AVAG-HLMP-3301-2 New Footprint=AVAG-HLMP-3301-2
+Change Component Footprint: Designator=J3 Old Footprint=FP-0039281043-MFG New Footprint=FP-0039281043-MFG
+Added Pin To Net: NetName=RED_CTRL_1 Pin=U1-6
+Added Pin To Net: NetName=BLUE_CTRL_1 Pin=U1-9

@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=D11 Old Footprint=AVAG-HLMP-3301-2 New Footprint=AVAG-HLMP-3301-2
+Change Component Footprint: Designator=J2 Old Footprint=FP-0039281043-MFG New Footprint=FP-0039281043-MFG
+Change Component Footprint: Designator=J3 Old Footprint=FP-0039281043-MFG New Footprint=FP-0039281043-MFG
+Change Component Designator: OldDesignator=U NewDesignator=U3
+Change Component Description : Designator=F1 Old Description=Micro Chip Fuse, Size [L×W] (EIA) (mm): 1.6×0.8 (EIA:0603), Rated Current (A): 1, Internal R [at 25℃ max.] (m� New Description=Micro Chip Fuse, Size [L×W] (EIA) (mm): 1.6×0.8 (EIA:0603), Rated Current (A): 1, Internal R [at 25℃ max.] (m�|): 125, Rated Voltage (Open Circuit Voltage) [DC] (V): 32, Interrupting Rating (A): 50, Category Temp. Range (°C): -40 to +125
+Added Component: Designator=TH5(m3_w_tol_1p9)
+Added Component: Designator=TH6(m3_w_tol_1p9)
+Added Member To Class: ClassName=Peripheral_Schematic Member=Component TH5 M3_screw
+Added Member To Class: ClassName=Peripheral_Schematic Member=Component TH6 M3_screw

@@ -100,23 +100,6 @@ GenerateClassCluster=0
 DocumentUniqueId=KTUEOFHO
 
 [Document4]
-DocumentPath=SPI_CAN.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=UHHFEMCD
-
-[Document5]
 DocumentPath=Ultra_Bright_RGBs.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -133,7 +116,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SVXZVUPI
 
-[Document6]
+[Document5]
 DocumentPath=Peripheral_Project.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -150,7 +133,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document6]
 DocumentPath=Peripheral_PCB_RevB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -167,7 +150,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WYGZTMUJ
 
-[Document8]
+[Document7]
 DocumentPath=Peripheral_PCB_RevA.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -182,7 +165,32 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=UUNNMOJX
+
+[Document8]
+DocumentPath=Peripheral_PCB_RevC.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=HOKQKGSK
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Peripheral_Project\Design Rule Check - Peripheral_PCB_RevB.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for Peripheral_Project\Design Rule Check - Peripheral_PCB_RevC.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
@@ -1207,10 +1215,16 @@ NetClassManualEnabled=1
 NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
-SelectedOnly=0
+SelectedOnly=1
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=Peripheral.SchLib
+ComponentDesignItemID0=ESDCAN01-2BLY
+ComponentSymbolReference0=ESDCAN01-2BLY
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1224,6 +1238,33 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
+ParameterName0=Comment
+ParameterUpdate0=1
+ParameterName1=Component Kind
+ParameterUpdate1=1
+ParameterName2=Copyright
+ParameterUpdate2=1
+ParameterName3=Description
+ParameterUpdate3=1
+ParameterName4=Library Reference
+ParameterUpdate4=1
+ParameterName5=Manufacturer_Part_Number
+ParameterUpdate5=1
+ParameterName6=Mfr_Name
+ParameterUpdate6=1
+ParameterName7=RefDes
+ParameterUpdate7=1
+ParameterName8=Supplier 1
+ParameterUpdate8=1
+ParameterName9=Supplier Part Number 1
+ParameterUpdate9=1
+ParameterName10=Type
+ParameterUpdate10=1
+ModelTypeGroup0=PCBLIB
+ModelTypeUpdate0=1
+ModelType0=PCBLIB
+ModelName0=SOT_01-2BLY_STM
+ModelUpdate0=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0

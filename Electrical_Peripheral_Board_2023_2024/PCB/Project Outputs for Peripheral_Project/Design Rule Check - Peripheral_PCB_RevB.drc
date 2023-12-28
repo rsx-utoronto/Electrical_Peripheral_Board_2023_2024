@@ -1,0 +1,165 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\D\Documents\School\RSX\Electrical_Peripheral_Board_2022_2023\Electrical_Peripheral_Board_2023_2024\PCB\Peripheral_PCB_RevB.PcbDoc
+Date     : 12/26/2023
+Time     : 9:40:39 PM
+
+Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U1-4(662.716mil,2116.142mil) on Multi-Layer And Pad U2-26(803.15mil,1906.693mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U2-26(803.15mil,1906.693mil) on Bottom Layer And Pad U2-10(1079.134mil,1727.559mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad U4-1(1014.323mil,1229.526mil) on Bottom Layer And Pad U2-10(1079.134mil,1727.559mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad UB-2(725.197mil,839.37mil) on Bottom Layer And Pad UR-2(982.284mil,838.976mil) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (672.835mil,403.543mil) from Top Layer to Bottom Layer And Track (805.905mil,404.331mil)(905.512mil,404.331mil) on Top Layer 
+Rule Violations :5
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=1000mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=1000mil) (Preferred=6mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=5mil) (Max=1000mil) (Preferred=5mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=20mil) (Max=1000mil) (Preferred=20mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=12mil) (Max=1000mil) (Preferred=12mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (InPadClass('PowerPads'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=11.811mil) (Conductor Width=5mil) (Air Gap=5mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=6mil) (All)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1001.303mil,1561.933mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1005.512mil,269.685mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1007.087mil,1642.913mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1013.268mil,1685.326mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1015.748mil,1745.275mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1023.228mil,742.52mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1032.466mil,2627.348mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1043.307mil,475.59mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1050.665mil,2081.374mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1074.803mil,1011.811mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1077.1mil,1374.803mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1097.638mil,2211.811mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1099.213mil,2558.661mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1114.567mil,1182.454mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1119.608mil,1012.336mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1200mil,475.984mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1214.173mil,208.661mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1234.646mil,745mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1274.642mil,100.161mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1285.394mil,876.378mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (1305.905mil,1765.748mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1350.827mil,1469.291mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (1376.378mil,1323.622mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (No Ring) Via (378.74mil,2132.284mil) from Top Layer to Bottom Layer (Annular Ring missing on Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (464.173mil,2681.102mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (516.575mil,1286.697mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (522.835mil,1165.354mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (573.228mil,1122.047mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (574.528mil,1620.079mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (603.307mil,1795.275mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (670.079mil,725.984mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (672.835mil,403.543mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (677.559mil,657.874mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (736.614mil,274.803mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (737.402mil,1795.275mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (737.927mil,1858.701mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (746.333mil,1698.779mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (748.425mil,1592.126mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (749.606mil,1552.756mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (775.984mil,1427.559mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (785.358mil,1231.421mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (785.433mil,1340.945mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (788.189mil,2126.378mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (788.189mil,657.48mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (789.37mil,2055.905mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (812.283mil,1577.379mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (812.598mil,272.441mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (835.433mil,1308.268mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (837.008mil,830.315mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (857.519mil,1778.581mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (861.063mil,1539.118mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (864.961mil,1955.118mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (865.354mil,655.118mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (870.079mil,1335.827mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (874.409mil,1420.079mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (887.795mil,739.37mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (904.331mil,478.74mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (906.299mil,1552.362mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (907.087mil,1287.401mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (5.906mil < 6mil) Via (907.087mil,270.079mil) from Top Layer to Bottom Layer (Annular Ring=5.906mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (915.708mil,1719.685mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+   Violation between Minimum Annular Ring: (3.937mil < 6mil) Via (993.268mil,1836.614mil) from Top Layer to Bottom Layer (Annular Ring=3.937mil) On (Top Layer)
+Rule Violations :62
+
+Processing Rule : Hole Size Constraint (Min=11.811mil) (Max=248.031mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=6mil) (All),(All)
+   Violation between Minimum Solder Mask Sliver Constraint: (0.203mil < 6mil) Between Pad R4-2(838.905mil,1507.874mil) on Bottom Layer And Via (861.063mil,1539.118mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [0.203mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-1(1079.134mil,1957.874mil) on Bottom Layer And Pad U2-2(1079.134mil,1932.283mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-10(1079.134mil,1727.559mil) on Bottom Layer And Pad U2-11(1079.134mil,1701.968mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-10(1079.134mil,1727.559mil) on Bottom Layer And Pad U2-9(1079.134mil,1753.149mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-11(1079.134mil,1701.968mil) on Bottom Layer And Pad U2-12(1079.134mil,1676.378mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-12(1079.134mil,1676.378mil) on Bottom Layer And Pad U2-13(1079.134mil,1650.787mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-13(1079.134mil,1650.787mil) on Bottom Layer And Pad U2-14(1079.134mil,1625.197mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-15(803.15mil,1625.197mil) on Bottom Layer And Pad U2-16(803.15mil,1650.787mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-16(803.15mil,1650.787mil) on Bottom Layer And Pad U2-17(803.15mil,1676.378mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-17(803.15mil,1676.378mil) on Bottom Layer And Pad U2-18(803.15mil,1701.968mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-18(803.15mil,1701.968mil) on Bottom Layer And Pad U2-19(803.15mil,1727.559mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (1.636mil < 6mil) Between Pad U2-18(803.15mil,1701.968mil) on Bottom Layer And Via (746.333mil,1698.779mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [1.636mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-19(803.15mil,1727.559mil) on Bottom Layer And Pad U2-20(803.15mil,1753.149mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-2(1079.134mil,1932.283mil) on Bottom Layer And Pad U2-3(1079.134mil,1906.693mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-20(803.15mil,1753.149mil) on Bottom Layer And Pad U2-21(803.15mil,1778.74mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-21(803.15mil,1778.74mil) on Bottom Layer And Pad U2-22(803.15mil,1804.331mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-22(803.15mil,1804.331mil) on Bottom Layer And Pad U2-23(803.15mil,1829.921mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-23(803.15mil,1829.921mil) on Bottom Layer And Pad U2-24(803.15mil,1855.512mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-24(803.15mil,1855.512mil) on Bottom Layer And Pad U2-25(803.15mil,1881.102mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-25(803.15mil,1881.102mil) on Bottom Layer And Pad U2-26(803.15mil,1906.693mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-26(803.15mil,1906.693mil) on Bottom Layer And Pad U2-27(803.15mil,1932.283mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-27(803.15mil,1932.283mil) on Bottom Layer And Pad U2-28(803.15mil,1957.874mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-3(1079.134mil,1906.693mil) on Bottom Layer And Pad U2-4(1079.134mil,1881.102mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-4(1079.134mil,1881.102mil) on Bottom Layer And Pad U2-5(1079.134mil,1855.512mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-5(1079.134mil,1855.512mil) on Bottom Layer And Pad U2-6(1079.134mil,1829.921mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-6(1079.134mil,1829.921mil) on Bottom Layer And Pad U2-7(1079.134mil,1804.331mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-7(1079.134mil,1804.331mil) on Bottom Layer And Pad U2-8(1079.134mil,1778.74mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (2.693mil < 6mil) Between Pad U2-8(1079.134mil,1778.74mil) on Bottom Layer And Pad U2-9(1079.134mil,1753.149mil) on Bottom Layer [Bottom Solder] Mask Sliver [2.693mil]
+   Violation between Minimum Solder Mask Sliver Constraint: (5.409mil < 6mil) Between Pad UG-1(1236.614mil,876.378mil) on Bottom Layer And Via (1285.394mil,876.378mil) from Top Layer to Bottom Layer [Bottom Solder] Mask Sliver [5.409mil]
+Rule Violations :29
+
+Processing Rule : Silk To Solder Mask (Clearance=5mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=5mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=71497.938mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 96
+Waived Violations : 0
+Time Elapsed        : 00:00:02
