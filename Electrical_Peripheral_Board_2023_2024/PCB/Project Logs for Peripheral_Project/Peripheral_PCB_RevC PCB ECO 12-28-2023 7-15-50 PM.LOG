@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=D11 Old Footprint=AVAG-HLMP-3301-2 New Footprint=AVAG-HLMP-3301-2
+Change Component Footprint: Designator=J3 Old Footprint=FP-0039281043-MFG New Footprint=FP-0039281043-MFG
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=+5 Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=+5 Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=+5 Pin=C8-2
