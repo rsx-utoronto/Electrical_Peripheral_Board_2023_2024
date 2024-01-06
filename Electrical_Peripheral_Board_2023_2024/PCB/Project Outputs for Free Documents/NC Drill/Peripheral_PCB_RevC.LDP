@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\D\Documents\School\RSX\Electrical_Peripheral_Board_2022_2023\Electrical_Peripheral_Board_2023_2024\PCB\Peripheral_PCB_RevC.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=peripheral_pcb_revc-roundholes.txt|DrillLayers=gtl,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=peripheral_pcb_revc-slotholes.txt|DrillLayers=gtl,gbl
