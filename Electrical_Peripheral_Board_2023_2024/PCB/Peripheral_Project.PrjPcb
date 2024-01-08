@@ -32,6 +32,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
+ConstraintManagerFlow=0
 IsVirtualBomDocumentRemoved=0
 OutputPath=
 LogFolderPath=
@@ -184,12 +185,301 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document9]
+DocumentPath=Job1.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for Peripheral_Project\Design Rule Check - Peripheral_PCB_RevB.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
 DocumentPath=Project Outputs for Peripheral_Project\Design Rule Check - Peripheral_PCB_RevC.html
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Free Documents\NC Drill\Peripheral_PCB_RevC-RoundHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for Peripheral_Project\NC Drill\Peripheral_PCB_RevC-RoundHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for Free Documents\NC Drill\Peripheral_PCB_RevC-SlotHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for Peripheral_Project\NC Drill\Peripheral_PCB_RevC-SlotHoles.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.2
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.2
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for Free Documents\NC Drill\Peripheral_PCB_RevC.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for Peripheral_Project\NC Drill\Peripheral_PCB_RevC.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GD1
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GD1
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GG1
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GG1
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM2
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM2
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM3
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM3
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM4
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM4
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM5
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM5
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM16
+DItemRevisionGUID=
+
+[GeneratedDocument44]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM16
+DItemRevisionGUID=
+
+[GeneratedDocument45]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM20
+DItemRevisionGUID=
+
+[GeneratedDocument46]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM20
+DItemRevisionGUID=
+
+[GeneratedDocument47]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM21
+DItemRevisionGUID=
+
+[GeneratedDocument48]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM21
+DItemRevisionGUID=
+
+[GeneratedDocument49]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM23
+DItemRevisionGUID=
+
+[GeneratedDocument50]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM23
+DItemRevisionGUID=
+
+[GeneratedDocument51]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GM24
+DItemRevisionGUID=
+
+[GeneratedDocument52]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GM24
+DItemRevisionGUID=
+
+[GeneratedDocument53]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GML
+DItemRevisionGUID=
+
+[GeneratedDocument54]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GML
+DItemRevisionGUID=
+
+[GeneratedDocument55]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument56]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument57]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument58]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument59]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument60]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument61]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument62]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument63]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument64]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument65]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument66]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument67]
+DocumentPath=Project Outputs for Free Documents\NC Drill\Peripheral_PCB_RevC.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument68]
+DocumentPath=Project Outputs for Peripheral_Project\NC Drill\Peripheral_PCB_RevC.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument69]
+DocumentPath=Project Outputs for Free Documents\Gerber\Peripheral_PCB_RevC.REP
+DItemRevisionGUID=
+
+[GeneratedDocument70]
+DocumentPath=Project Outputs for Peripheral_Project\Gerber\Peripheral_PCB_RevC.REP
 DItemRevisionGUID=
 
 [Configuration1]
@@ -1233,8 +1523,8 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=Peripheral.SchLib
-ComponentDesignItemID0=ESDCAN01-2BLY
-ComponentSymbolReference0=ESDCAN01-2BLY
+ComponentDesignItemID0=Nano
+ComponentSymbolReference0=Nano
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 FullReplace=1
@@ -1254,28 +1544,14 @@ ParameterName0=Comment
 ParameterUpdate0=1
 ParameterName1=Component Kind
 ParameterUpdate1=1
-ParameterName2=Copyright
+ParameterName2=Description
 ParameterUpdate2=1
-ParameterName3=Description
+ParameterName3=Library Reference
 ParameterUpdate3=1
-ParameterName4=Library Reference
-ParameterUpdate4=1
-ParameterName5=Manufacturer_Part_Number
-ParameterUpdate5=1
-ParameterName6=Mfr_Name
-ParameterUpdate6=1
-ParameterName7=RefDes
-ParameterUpdate7=1
-ParameterName8=Supplier 1
-ParameterUpdate8=1
-ParameterName9=Supplier Part Number 1
-ParameterUpdate9=1
-ParameterName10=Type
-ParameterUpdate10=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=SOT_01-2BLY_STM
+ModelName0=SHIELD_ARDUINO_NANO
 ModelUpdate0=1
 
 [DatabaseUpdateOptions]

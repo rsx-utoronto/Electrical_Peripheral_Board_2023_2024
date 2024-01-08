@@ -80,7 +80,7 @@ void SPI_bitModify(byte address, byte mask, byte data){
   buffer = (instruction << 24)|(address << 16)|(mask << 8)|(data);
   SPI.transfer(&buffer, 4);
   digitalWrite(SS, HIGH);
-  }
+}
 
 byte SPI_readStatus(){
   digitalWrite(SS, LOW);
