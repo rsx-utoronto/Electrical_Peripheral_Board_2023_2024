@@ -2,19 +2,47 @@
 FileName = Peripheral_PCB_RevC.GBR
 AutoAperture = True
 *************************************************************
-Generating : Bottom Layer
-      File : Peripheral_PCB_RevC.GBL
+Generating : Bottom Courtyard
+      File : Peripheral_PCB_RevC.GM21
 
-    Adding Layer      : Bottom Layer
+    Adding Layer      : Bottom Courtyard
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Assembly
+      File : Peripheral_PCB_RevC.GM20
+
+    Adding Layer      : Bottom Assembly
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Component Center
+      File : Peripheral_PCB_RevC.GM24
+
+    Adding Layer      : Bottom Component Center
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Multi-Layer
+      File : Peripheral_PCB_RevC.GML
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D13
-    D44
-    D45
-    D50
+    D35
+    D36
+    D40
+    D41
     D51
     D52
     D53
@@ -25,8 +53,157 @@ Used DCodes :
     D58
     D59
     D60
-    D61
+*************************************************************
+
+*************************************************************
+Generating : Top Component Center
+      File : Peripheral_PCB_RevC.GM16
+
+    Adding Layer      : Top Component Center
+
+
+Used DCodes :
+    D64
+*************************************************************
+
+*************************************************************
+Generating : Bottom 3D Body
+      File : Peripheral_PCB_RevC.GM23
+
+    Adding Layer      : Bottom 3D Body
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : Peripheral_PCB_RevC.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D12
+    D64
+    D65
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Peripheral_PCB_RevC.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : Peripheral_PCB_RevC.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D10
+    D13
     D62
+    D63
+    D64
+*************************************************************
+
+*************************************************************
+Generating : Top Assembly
+      File : Peripheral_PCB_RevC.GM5
+
+    Adding Layer      : Top Assembly
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 4
+      File : Peripheral_PCB_RevC.GM4
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : Peripheral_PCB_RevC.GM3
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Top 3D Body
+      File : Peripheral_PCB_RevC.GM2
+
+    Adding Layer      : Top 3D Body
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Board Outline
+      File : Peripheral_PCB_RevC.GM1
+
+    Adding Layer      : Board Outline
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Dielectric2
+      File : Peripheral_PCB_RevC.2
+
+    Adding Layer      : Dielectric2
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : Peripheral_PCB_RevC.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : Peripheral_PCB_RevC.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
 *************************************************************
 
 *************************************************************
@@ -39,17 +216,19 @@ Generating : Top Layer
 
 
 Used DCodes :
-    D13
+    D14
     D18
     D19
     D20
     D21
     D22
-    D23
     D24
+    D25
     D26
-    D44
-    D45
+    D35
+    D36
+    D40
+    D41
     D47
     D48
     D49
@@ -65,82 +244,6 @@ Used DCodes :
     D59
     D60
     D61
-    D62
-*************************************************************
-
-*************************************************************
-Generating : Top Solder
-      File : Peripheral_PCB_RevC.GTS
-
-    Adding Layer      : Top Solder
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D22
-    D23
-    D24
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-    D45
-    D46
-*************************************************************
-
-*************************************************************
-Generating : Top Paste
-      File : Peripheral_PCB_RevC.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-*************************************************************
-
-*************************************************************
-Generating : Bottom Paste
-      File : Peripheral_PCB_RevC.GBP
-
-    Adding Layer      : Bottom Paste
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
 *************************************************************
 
 *************************************************************
@@ -173,147 +276,58 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Overlay
-      File : Peripheral_PCB_RevC.GBO
+Generating : Top Solder
+      File : Peripheral_PCB_RevC.GTS
 
-    Adding Layer      : Bottom Overlay
+    Adding Layer      : Top Solder
 
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Keep-Out Layer
-      File : Peripheral_PCB_RevC.GKO
-
-    Adding Layer      : Keep-Out Layer
-
-
-Used DCodes :
-    D13
-*************************************************************
-
-*************************************************************
-Generating : Board Outline
-      File : Peripheral_PCB_RevC.GM1
-
-    Adding Layer      : Board Outline
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Top 3D Body
-      File : Peripheral_PCB_RevC.GM2
-
-    Adding Layer      : Top 3D Body
-
-
-Used DCodes :
-    D10
-*************************************************************
-
-*************************************************************
-Generating : Top Courtyard
-      File : Peripheral_PCB_RevC.GM3
-
-    Adding Layer      : Top Courtyard
-
-
-Used DCodes :
-    D10
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 4
-      File : Peripheral_PCB_RevC.GM4
-
-    Adding Layer      : Mechanical 4
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Top Assembly
-      File : Peripheral_PCB_RevC.GM5
-
-    Adding Layer      : Top Assembly
-
-
-Used DCodes :
-    D10
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 13
-      File : Peripheral_PCB_RevC.GM13
-
-    Adding Layer      : Mechanical 13
-
-
-Used DCodes :
-    D10
-    D14
-    D63
-    D64
-    D65
-*************************************************************
-
-*************************************************************
-Generating : Top Overlay
-      File : Peripheral_PCB_RevC.GTO
-
-    Adding Layer      : Top Overlay
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D15
-    D16
-    D17
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 15
-      File : Peripheral_PCB_RevC.GM15
-
-    Adding Layer      : Mechanical 15
-
-
-Used DCodes :
-    D12
-    D65
-    D66
-*************************************************************
-
-*************************************************************
-Generating : Top Component Center
-      File : Peripheral_PCB_RevC.GM16
-
-    Adding Layer      : Top Component Center
-
-
-Used DCodes :
-    D65
-*************************************************************
-
-*************************************************************
-Generating : Multi-Layer
-      File : Peripheral_PCB_RevC.GML
+    Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
+    D20
+    D22
+    D24
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
     D44
     D45
-    D50
+    D46
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : Peripheral_PCB_RevC.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D14
+    D35
+    D36
+    D40
+    D41
     D51
     D52
     D53
@@ -325,36 +339,6 @@ Used DCodes :
     D59
     D60
     D61
-*************************************************************
-
-*************************************************************
-Generating : Bottom 3D Body
-      File : Peripheral_PCB_RevC.GM23
-
-    Adding Layer      : Bottom 3D Body
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Bottom Component Center
-      File : Peripheral_PCB_RevC.GM24
-
-    Adding Layer      : Bottom Component Center
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Dielectric2
-      File : Peripheral_PCB_RevC.2
-
-    Adding Layer      : Dielectric2
-
-
-Used DCodes :
 *************************************************************
 
 *************************************************************
@@ -372,13 +356,14 @@ Used DCodes :
     D20
     D21
     D22
-    D23
     D24
+    D25
     D26
-    D44
-    D45
+    D35
+    D36
+    D40
+    D41
     D47
-    D50
     D51
     D52
     D53
@@ -389,7 +374,6 @@ Used DCodes :
     D58
     D59
     D60
-    D61
 *************************************************************
 
 *************************************************************
@@ -402,9 +386,10 @@ Generating : Bottom Pad Master
 
 
 Used DCodes :
-    D44
-    D45
-    D50
+    D35
+    D36
+    D40
+    D41
     D51
     D52
     D53
@@ -415,27 +400,43 @@ Used DCodes :
     D58
     D59
     D60
-    D61
 *************************************************************
 
 *************************************************************
-Generating : Bottom Assembly
-      File : Peripheral_PCB_RevC.GM20
+Generating : Bottom Paste
+      File : Peripheral_PCB_RevC.GBP
 
-    Adding Layer      : Bottom Assembly
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
 
 
 Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Courtyard
-      File : Peripheral_PCB_RevC.GM21
+Generating : Top Paste
+      File : Peripheral_PCB_RevC.GTP
 
-    Adding Layer      : Bottom Courtyard
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
 
 
 Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
 *************************************************************
 
 *************************************************************
@@ -448,9 +449,9 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D14
+    D13
+    D66
     D67
-    D68
 *************************************************************
 
 *************************************************************
@@ -463,7 +464,7 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D14
+    D13
 *************************************************************
 
 *************************************************************
@@ -472,6 +473,6 @@ Generating : Profile
 
 
 Used DCodes :
-    D69
+    D68
 *************************************************************
 
